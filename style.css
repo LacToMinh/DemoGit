@@ -1,0 +1,1087 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.i > li a {
+    display: flex;
+    text-decoration: none;
+    color:#626A67;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 8px 20px;
+    min-width: 120px;
+    text-align: center;
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    margin-left: 33%;
+    display:flex;
+    z-index: 9999;
+    margin-top: -16px;
+}
+
+.i  li {
+    display: inline-block;
+    text-decoration: none;
+    color:#626A67;
+    font-size: 23px;
+    font-weight: bold;
+    min-width: 120px;
+    list-style: none;
+}
+
+.i2 {
+    margin-right: -70px;
+}
+
+.i3 {
+    margin-right: -40px;
+}
+
+nav > ul {
+    display:flex;
+    list-style: none;
+    text-transform: uppercase;
+    background: pink;
+    border-radius: 20px;
+}
+
+nav > ul > li:hover > a {
+    color: white;
+    background-color: rgb(0, 0, 0);    
+    border-radius: 20px;
+    border: 4px solid black;
+    border-color: rgb(243, 107, 129);
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color:#626A67;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    padding: 18px 20px;
+
+    text-align: center;
+}
+
+#header > .bong {
+    display:flex;
+    margin-left: 30px;
+}
+
+#header > .bong > .logo > img {
+    width: 90px;
+    height: 85px;
+}
+
+#header > .bong p {
+    font-weight: bold;
+    font-size: 31px;
+    margin-left: 25px;
+    padding-top: 12px;
+    border: 3.5px solid rgb(250, 129, 149);
+    width: 270px;
+    height: 75px;
+    text-align: center;
+    background-color: rgb(249, 180, 191);
+    color: black;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+}
+
+#banner {
+    width: 100%;
+    background-image: url("images/2mid2.jpg");
+    background-size: cover;
+    height: 770px;
+    padding: 0px 133px;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner > .box-left,
+.box-right {
+    width: 50%;
+}
+
+#banner > .box-left h2 {
+    font-size: 48px;
+    padding-top: 75px;
+    color: rgba(255, 255, 255, 0.982);
+    font-weight: bold;
+}
+
+#banner > .box-left p {
+    color: #D0D0D0;
+    font-size: 30px;
+}
+
+#banner > .box-left button {
+    width: 199px;
+    height: 45px;
+    margin-top: 34px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #1d1a1a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#banner > .box-left button:hover {
+    background: coral;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#banner > .box-right {
+    padding-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#banner > .box-right img {
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+    width: 190px;
+    border-radius: 40px;
+}
+
+#banner > .box-right .left {
+    height: 480px;
+}
+
+#banner > .box-right .mid {
+    height: 550px;
+}
+
+#banner > .box-right .right {
+    height: 480px;
+}
+
+#banner > .box-right img:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+#banner .box-right img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.to-bottom {
+    position:absolute;
+    bottom:-40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.to-bottom2 {
+    position:absolute;
+    bottom:-40px;
+    left:50%;
+
+}
+
+.to-bottom3 {
+    position:absolute;
+    bottom:-22%;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+#cacsanpham {
+    padding-top:116px;
+    padding-bottom: 78px;
+    padding-left:135px;
+    padding-right:135px;
+    background:url("images/bg-page-lsht.jpg") ;
+}
+
+#cacsanpham > h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:50px;
+    color: #1c3501;
+    font-weight: bolder;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.list > .sanpham {
+    background:white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    width: 32%;
+}
+
+.list > .sanpham .img {
+    width: 100%;
+}
+
+.list > .sanpham {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Đảm bảo rằng lớp màu phủ sẽ không tràn ra ngoài hình ảnh */
+}
+
+.overlay-text {
+    position: absolute;
+    left: 1px;
+    top: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    font-size: 24px; 
+    opacity: 0; /* Ẩn văn bản ban đầu */
+}
+
+.list > .sanpham:hover .overlay-text {
+    opacity: 1; /* Hiển thị văn bản khi hover */
+}
+
+
+/* LOGO GRAB VÀ SHOPEE*/
+.g  {
+    position: absolute;
+    left: 250px;
+    top: 320px;
+    cursor: pointer;
+    width: 55px;
+}
+
+.s  {
+    position: absolute;
+    left: 330px;
+    top: 320px;
+    cursor: pointer;
+    width: 55px;
+}
+
+.list > .sanpham:hover .s {
+    opacity: 1; /* Hiển thị văn bản khi hover */
+}
+
+
+.mua  {
+    position: relative;
+    left: 80px;
+    top: 330px;
+    text-align: justify;
+    color: white; /* Màu chữ */
+    font-size: 24px; /* Kích thước chữ */
+    opacity: 0; /* Ẩn văn bản ban đầu */
+}
+
+.mua:hover {
+     color: coral;
+     font-weight: bold;
+     cursor: pointer;
+     font-size: 27px;
+}
+.list > .sanpham:hover .mua {
+    opacity: 1; /* Hiển thị văn bản khi hover */
+   
+}
+
+
+
+.list > .sanpham::before {
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.list > .sanpham:hover::before {
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ mờ 50% khi di chuột */
+}
+
+
+.list > .sanpham > .name {
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top:21px;
+}
+
+.list > .sanpham > .desc {
+    text-align: center;
+    color:#626a67;
+}
+
+.list > .sanpham > .price {
+    text-align: center;
+    color:#099217;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sale {
+    width: 100%;
+    display: flex;
+    height: 352px;
+}
+
+.sale > .left, 
+.right {
+    width: 50%;
+}
+
+.sale > .left {
+    background: #3e413e;
+    text-align: center;
+}
+
+.sale > .left  h1 {
+    padding-top: 38px;
+}
+
+.sale > .left span:nth-child(1) {
+    color: white;
+    font-size: 52px;
+}
+
+.sale > .left span:nth-child(2) {
+    color: coral;
+    font-size: 128px;
+}
+
+.sale > .right {
+    background-image: url("images/chon-va-mua-kem-trang-tien-since-1958-chuan-xin-cua-ha-thanh-nhu-the-nao-1595956215.jpg");
+}
+
+#comment {
+    width: 100%;
+    height: 730px;
+    margin:0px auto;
+    padding-left: 21%;
+    background-image: url("images/bg-comment.png");
+    align-items: center;
+}
+
+#comment > h2 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 38px;
+    color: #626a67;
+    margin-left: -25%;
+    padding-bottom: 30px;
+    
+}
+
+#comment-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#list-comment {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition:0.5s;
+}
+
+#list-comment .item {
+    width: 100%;
+    height: 100%;
+    background:#362f2f;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top: 13px;
+}
+
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    color:#fff;
+}
+
+#list-comment .item .text {
+    padding:20px 50px;
+    color:#fff;
+}
+
+#footer {
+    width: 100%;
+    background: black;
+    height: 322px;
+    padding: 57px 2px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 30%;
+    color:#fff;
+    padding-left: 50px;
+}
+
+#footer .box h3 {
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(243, 141, 158);
+}
+
+#footer .box .logo img {
+    width: 100px;
+}
+
+#footer .box > .thongbao img  {
+    width: 250px;
+    padding-top: 10px;
+}
+#footer .box .quick-menu {
+    margin-top:20px;
+}
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+}
+
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#footer .box .quick-menu ,.item a:hover {
+    color: rgb(225, 68, 94);
+}
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background:transparent;
+    padding-left:20px;
+    color:#fff;
+    margin-top:30px;
+}
+
+#footer .box form button {
+    background:#362f2f;
+    box-shadow: 2px 2px 2px rgb(138, 137, 137);
+    width: 163px;
+    height: 38px;
+    margin-top:29px;
+    color:#fff;
+    cursor: pointer;
+}
+
+#footer .box form button:hover{
+    color: black;
+    background-color: coral;
+}
+
+#footer > .box > .ten > a img {
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.footer-two {
+    background: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer > .button button {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+
+}
+
+#footer > .button button:hover {
+    cursor: pointer;
+}
+
+
+/*------------------- TRANG SẢN PHẨM ----------------------*/
+
+#baner {
+    width: 100%;
+    background-image: url("images/phan-biet-kem-chinh-hang-1593514394.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 770px;
+    padding: 0px 133px;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#baner > .box-left,
+.box-right {
+    width: 50%;
+}
+
+#baner > .box-left h2 {
+    font-size: 48px;
+    padding-top: 75px;
+    color: White;
+    font-weight: bold;
+}
+
+#baner > .box-left p {
+    color: #D0D0D0;
+    font-size: 30px;
+}
+
+#baner > .box-left button {
+    width: 191px;
+    height: 40px;
+    margin-top: 41px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #1d1a1a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#banner > .box-left,
+.box-right {
+    width: 50%;
+}
+
+#baner > .box-left button:hover {
+    background: coral;
+    color: black;
+}
+
+#baner > .box-right {
+    padding-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#baner > .box-right img {
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+    width: 190px;
+    border-radius: 40px;
+    
+}
+
+#baner > .box-right .left {
+    height: 480px;
+}
+
+#baner > .box-right .mid {
+    height: 550px;
+}
+
+#baner > .box-right .right {
+    height: 480px;
+}
+
+#baner > .box-right img:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+#baner .box-right img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+#cacsanpham2 {
+    padding-top:16px;
+    padding-bottom: 78px;
+    background:url("images/bg-page-lsht.jpg") ;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-top: 90px;
+    
+}
+
+#cacsanpham2 > .cauchuyen {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: -80px;
+    font-size: 16px;
+}
+
+#cacsanpham2 > .cauchuyen2 {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 16px;
+    padding-left: 90px;
+    padding-right: 90px;
+   
+}
+
+#cacsanpham2 > h2 {
+    margin-top: -50px;
+    color: #1c3501;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 60%;
+}
+
+#cacsanpham2 > h4 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1c3501;
+    
+    padding-top: 60px;
+    font-weight: bold;
+}
+
+#cacsanpham2  {
+    max-width: 100%; 
+    max-height: 100%; 
+    text-align: center;
+}
+
+#cacsanpham2 > .duoikemtuoi {
+    max-width: 100%; 
+    max-height: 100%; 
+    display: inline-block;
+    padding-bottom: 40px;
+}
+.list > .sanpham > .font {
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.danhmuc {
+    margin-bottom: 100px;
+    border: none;
+    width: 23%;
+    background: white;
+    text-align: justify;
+}
+
+.danhmuc ul {
+    list-style: none;
+}
+
+.danhmuc ul li {
+    padding: 20px;
+    font-size: 25px;;
+    font-weight: bold;
+    left: 0px;
+}
+
+.danhmuc ul img {
+    padding-right: 20px;
+    filter: grayscale(100%);
+}
+
+.danhmuc ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.danhmuc ul a:hover {
+    color: rgb(221, 116, 134);
+    font-size: 26px;
+}
+
+#cacsanpham2 > h3 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#cacsanpham2 h2 {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 0%;
+}
+
+
+
+/* PHẦN GIỚI THIỆU TRANG CHỦ */
+
+.gioithieu2 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    background:url("images/bg-page-lsht.jpg") ;
+    padding-bottom: 200px;
+}
+
+.gioithieu2 > .gt1  {
+    font-size: 50px;
+}
+
+.gioithieu2 > .gt2 {
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-left: 135px;
+}
+
+.gioithieu2 .hr2 {
+    margin-top: 10px;
+    margin-left: 38%;
+    margin-right: 50%;
+    border: 3px solid #2b5003;
+    border-radius: 20px;
+}
+
+.gioithieu2 .hr1 {
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 55%;
+    border: 3px solid #2b5003;
+    border-radius: 20px;
+}
+
+
+.gioithieu2 .gt3 {
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-right: 15%;
+}
+
+.gioithieu2 .gt4 {
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 1.2%;
+    padding-right: 15%;
+}
+
+.gioithieu2 > .ic {
+    display: flex;
+    margin-left: 45%;
+}
+
+.gioithieu2 > .ic .p2 {
+    text-align: center;
+    text-decoration: none;
+    color: #11A04A;
+    font-size: 20px;
+}
+
+.gioithieu2 > .ic img {
+    width: 17px;
+    height: 15px;
+    margin-top: 9px;
+    margin-left: 11px;
+}
+
+.gioithieu2 > .ic > .p2:hover {
+    color: #085226;
+}
+
+/*PHẦN GIỚI THIỆU*/
+
+.gioithieu {
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    background:url("images/bg-page-lsht.jpg") ;
+}
+
+.gioithieu > .gt1  {
+    font-size: 50px;
+}
+
+.gioithieu > .gt2 {
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-left: 135px;
+}
+
+.gioithieu .hr2 {
+    margin-top: 10px;
+    margin-left: 38%;
+    margin-right: 50%;
+    border: 3px solid #2b5003;
+    border-radius: 20px;
+}
+
+.gioithieu .hr1 {
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 55%;
+    border: 3px solid #2b5003;
+    border-radius: 20px;
+}
+
+
+.gioithieu .gt3 {
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-right: 15%;
+}
+
+.gioithieu .gt4, .gt5, .gt6, .gt7, .gt8 {
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 1.2%;
+    padding-right: 15%;
+}
+
+.gioithieu .gt9 {
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 1.2%;
+    padding-bottom: 10%;
+    padding-right: 15%;
+}
+
+#footer > button {
+    width: 10px;
+    height: 10px;
+}
+
+.lg {
+    width: 70px;
+    height: 70px;
+}
+
+.lienhe1 {
+    background: #efece5;
+    width: 100%;
+    height: 890px;
+}
+.lienhe {
+    margin-left: 25%; /* Đổi thành margin-left: 25%; */
+    padding-right: 25%;
+}
+
+.bao {
+    display: flex;
+    
+}
+
+.bao > .email {
+    margin-left: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 25%;
+    font-size: 17px;
+    width: 50%;
+    padding-left: 50px; 
+    background-image: url("images/ic-inp-email.png"); 
+    background-repeat: no-repeat; 
+    background-size: 20px 20px;
+    background-position:20px center; 
+    border-radius: 0.25em;
+    border: none;
+}
+
+.bao > .tel {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 25%;
+    font-size: 17px;
+    width: 50%;
+    padding-left: 50px; 
+    background-image: url("images/ic-inp-phone.png"); 
+    background-repeat: no-repeat; 
+    background-size: 20px 20px;
+    background-position:20px center; 
+
+    border-radius: 0.25em;
+    border: none;
+}
+
+.use {
+    font-size: 17px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 25%;
+    margin-bottom: 25px;
+    width: 100%;
+    padding-left: 50px; 
+    background-image: url("images/ic-inp-user.png"); 
+    background-repeat: no-repeat; 
+    background-size: 20px 20px;
+    background-position:20px center; 
+
+    border-radius: 0.25em;
+    border: none;
+}
+
+.tieude {
+    margin-top: 25px;
+    font-size: 17px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 25%;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 50px; 
+    background-image: url("images/ic-inp-title.png"); 
+    background-repeat: no-repeat; 
+    background-size: 20px 20px;
+    background-position:20px center; 
+
+    border-radius: 0.25em;
+    border: none;
+}
+
+.area {
+    font-size: 17px;
+    padding-top: 7px;
+    padding-bottom: 11rem;
+    width: 100%; 
+    margin-top: 18px;
+    padding-left: 50px;
+    background-image: url("images/ic-inp-ct.png"); 
+    background-repeat: no-repeat; 
+    background-size: 20px 20px;
+    background-position:20px 10px; 
+
+    border: none;
+    border-radius: 0.25em;
+
+
+}
+
+.use:hover, .email:hover, .tel:hover, .tieude:hover, .area:hover {
+    border: 2px solid black;
+    
+}
+
+.butt {
+    width: 181px;
+    height: 48px;
+    border-radius: 6px;
+    background: #11a04a url("images/ic-plane.png") no-repeat 45px 14px;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: left;
+    line-height: 48px;
+    padding-left: 75px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    margin-left: 38.5%;
+    margin-top: 27px;
+    text-decoration: none;
+    
+}
+
+.h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: bold;
+
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background: transparent url("images/bg-title.png") no-repeat bottom center;
+    font-weight: normal;
+    color: #1c3501;
+    background-position: center bottom 50px;
+}
+
+.span {
+    float:left;
+    text-align: center;
+    margin: 10px 23%;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-style: italic;
+    color:#626a67
+}
+
+#search {
+    width: 150px;
+    height: 40px;
+    transition: width ease 0.2s, opacity ease 0.4s;
+    transition: width ease 0.2s, opacity ease 0.4s;
+    border-radius: 32px;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25), inset 0px 1px 3px rgb(0, 0, 0), 0px 1px 0px rgba(255, 255, 255, 0.03);
+    text-align: left;
+    font: 13px "Helvetica Neue", Arial, sans-serif;
+    padding: 4px 10px;
+    margin-right: 60px;
+    border: none;
+    background: rgb(253, 252, 252);
+    margin-bottom: 0;
+    outline: none;
+    opacity: 0.7;
+    color: #080606;
+    margin-bottom: 10px;
+    font-size: 20px;
+ 
+}
